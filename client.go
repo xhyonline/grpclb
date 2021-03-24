@@ -13,7 +13,7 @@ import (
 
 func main() {
 	var etcdEndpoints = []string{
-		"121.5.62.93:2379",
+		"127.0.0.1:2379",
 	}
 	r:=etcdv3.NewServiceDiscovery(etcdEndpoints)
 	resolver.Register(r)

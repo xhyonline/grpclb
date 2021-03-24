@@ -33,7 +33,7 @@ func main() {
 	const serverName = "user-center"
 	// 定义 etcd 地址
 	var etcdEndpoints = []string{
-		"121.5.62.93:2379",
+		"127.0.0.1:2379",
 	}
 	flag.StringVar(&port, "port", "", "端口不能不填写")
 	flag.Parse()
