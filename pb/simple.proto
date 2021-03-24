@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package pb;
+
+option go_package = "github.com/xhyonline/etcd-study/pb";
+
+message Empty {
+
+}
+
+message Response {
+  string message = 1 ;
+}
+
+service Simple {
+  rpc Hello(Empty) returns (Response);
+}
